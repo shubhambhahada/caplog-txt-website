@@ -1,0 +1,52 @@
+# Site settings
+title: "Caplog.txt"
+description: "An open, plain-text format for structured personal logging"
+baseurl: ""
+url: "https://caplogtxt.github.io"
+
+# Build settings
+markdown: kramdown
+highlighter: rouge
+sass:
+  sass_dir: _sass
+  style: compressed
+
+# Jekyll configuration for GitHub Pages
+plugins:
+  - jekyll-sass-converter
+
+# Collections
+collections:
+  posts:
+    output: false
+
+# Exclude from processing
+exclude:
+  - README.md
+  - Gemfile
+  - Gemfile.lock
+  - node_modules
+  - vendor/bundle/
+  - vendor/cache/
+  - vendor/gems/
+  - vendor/ruby/
+
+# Site navigation
+navigation:
+  - title: "About"
+    anchor: "about"
+  - title: "Features"
+    anchor: "features"
+  - title: "CLI Tool"
+    anchor: "cli-tool"
+  - title: "Get Started"
+    anchor: "get-started"
+
+# GitHub repository information
+github:
+  repository_url: "https://github.com/caplogtxt/caplog.txt"
+  cli_repository_url: "https://github.com/caplogtxt/caplog.txt-cli"
+
+# Theme configuration
+theme_color: "#2c3e50"
+accent_color: "#3498db"

@@ -1,0 +1,140 @@
+// Button Styles
+
+.btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: $spacing-sm;
+  padding: $spacing-sm $spacing-lg;
+  border: 2px solid transparent;
+  border-radius: $radius-md;
+  font-family: $font-family-primary;
+  font-size: $font-size-base;
+  font-weight: $font-weight-medium;
+  line-height: 1;
+  text-decoration: none;
+  cursor: pointer;
+  transition: $transition-base;
+  white-space: nowrap;
+  
+  &:focus {
+    outline: 2px solid $accent-color;
+    outline-offset: 2px;
+  }
+  
+  // Icon in buttons
+  .icon {
+    width: 1em;
+    height: 1em;
+    flex-shrink: 0;
+  }
+}
+
+// Primary button
+.btn-primary {
+  background: linear-gradient(135deg, $primary-color 0%, $accent-color 100%);
+  color: $text-white;
+  border-color: transparent;
+  
+  &:hover,
+  &:focus {
+    background: linear-gradient(135deg, darken($primary-color, 5%) 0%, darken($accent-color, 5%) 100%);
+    color: $text-white;
+    text-decoration: none;
+    transform: translateY(-1px);
+    box-shadow: 0 8px 20px rgba($primary-color, 0.3);
+  }
+  
+  &:active {
+    transform: translateY(0);
+    box-shadow: 0 4px 10px rgba($primary-color, 0.2);
+  }
+}
+
+// Outline button
+.btn-outline {
+  background-color: transparent;
+  color: $primary-color;
+  border-color: $primary-color;
+  
+  &:hover,
+  &:focus {
+    background-color: $primary-color;
+    color: $text-white;
+    text-decoration: none;
+    transform: translateY(-1px);
+    box-shadow: 0 4px 12px rgba($primary-color, 0.2);
+  }
+  
+  &:active {
+    transform: translateY(0);
+  }
+}
+
+// Secondary button
+.btn-secondary {
+  background-color: $background-secondary;
+  color: $text-primary;
+  border-color: $border-color;
+  
+  &:hover,
+  &:focus {
+    background-color: $background-tertiary;
+    color: $text-primary;
+    text-decoration: none;
+    transform: translateY(-1px);
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  }
+  
+  &:active {
+    transform: translateY(0);
+  }
+}
+
+// Button sizes
+.btn-sm {
+  padding: $spacing-xs $spacing-md;
+  font-size: $font-size-sm;
+}
+
+.btn-lg {
+  padding: $spacing-md $spacing-xl;
+  font-size: $font-size-lg;
+}
+
+// Full width button
+.btn-block {
+  width: 100%;
+  justify-content: center;
+}
+
+// Disabled button
+.btn:disabled,
+.btn.disabled {
+  opacity: 0.6;
+  cursor: not-allowed;
+  transform: none !important;
+  box-shadow: none !important;
+  
+  &:hover,
+  &:focus {
+    transform: none !important;
+    box-shadow: none !important;
+  }
+}
+
+// Button group
+.btn-group {
+  display: inline-flex;
+  align-items: center;
+  gap: $spacing-sm;
+  
+  @media (max-width: $mobile) {
+    flex-direction: column;
+    width: 100%;
+    
+    .btn {
+      width: 100%;
+    }
+  }
+}

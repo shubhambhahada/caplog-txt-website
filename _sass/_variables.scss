@@ -1,0 +1,54 @@
+// Variables
+:root {
+  // Colors
+  --primary-color: #{$primary-color};
+  --accent-color: #{$accent-color};
+  --text-primary: #{$text-primary};
+  --text-secondary: #{$text-secondary};
+  --text-muted: #{$text-muted};
+  --background-primary: #{$background-primary};
+  --background-secondary: #{$background-secondary};
+  --background-tertiary: #{$background-tertiary};
+  --border-color: #{$border-color};
+  --border-light: #{$border-light};
+  
+  // Gradients
+  --gradient-primary: linear-gradient(135deg, #{$primary-color} 0%, #{$accent-color} 100%);
+  --gradient-subtle: linear-gradient(135deg, #{$background-secondary} 0%, #{$background-tertiary} 100%);
+  
+  // Shadows
+  --shadow-small: 0 2px 4px rgba(0, 0, 0, 0.1);
+  --shadow-medium: 0 4px 12px rgba(0, 0, 0, 0.15);
+  --shadow-large: 0 8px 32px rgba(0, 0, 0, 0.2);
+  
+  // Typography
+  --font-family-primary: #{$font-family-primary};
+  --font-family-mono: #{$font-family-mono};
+  --font-size-base: #{$font-size-base};
+  --line-height-base: #{$line-height-base};
+  
+  // Spacing
+  --spacing-xs: #{$spacing-xs};
+  --spacing-sm: #{$spacing-sm};
+  --spacing-md: #{$spacing-md};
+  --spacing-lg: #{$spacing-lg};
+  --spacing-xl: #{$spacing-xl};
+  --spacing-2xl: #{$spacing-2xl};
+  --spacing-3xl: #{$spacing-3xl};
+  
+  // Breakpoints
+  --mobile: #{$mobile};
+  --tablet: #{$tablet};
+  --desktop: #{$desktop};
+  --wide: #{$wide};
+  
+  // Transitions
+  --transition-fast: #{$transition-fast};
+  --transition-base: #{$transition-base};
+  --transition-slow: #{$transition-slow};
+  
+  // Border radius
+  --radius-sm: #{$radius-sm};
+  --radius-md: #{$radius-md};
+  --radius-lg: #{$radius-lg};
+}

@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="{{ site.description }}">
+    <meta name="keywords" content="caplog.txt, logging, plain text, personal logs, structured logging">
+    <meta name="author" content="Caplog.txt Project">
+    
+    <title>{% if page.title %}{{ page.title }} | {% endif %}{{ site.title }}</title>
+    
+    <!-- Favicon -->
+    <link rel="icon" type="image/png" href="{{ '/assets/images/logo.png' | relative_url }}">
+    
+    <!-- Styles -->
+    <link rel="stylesheet" href="{{ '/assets/css/main.css' | relative_url }}">
+    
+    <!-- Preload fonts for better performance -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+    
+    <!-- Open Graph meta tags for social sharing -->
+    <meta property="og:title" content="{{ page.title | default: site.title }}">
+    <meta property="og:description" content="{{ page.description | default: site.description }}">
+    <meta property="og:image" content="{{ '/assets/images/logo.png' | absolute_url }}">
+    <meta property="og:url" content="{{ page.url | absolute_url }}">
+    <meta property="og:type" content="website">
+    
+    <!-- Twitter Card meta tags -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="{{ page.title | default: site.title }}">
+    <meta name="twitter:description" content="{{ page.description | default: site.description }}">
+    <meta name="twitter:image" content="{{ '/assets/images/logo.png' | absolute_url }}">
+</head>
+<body>
+    {% include header.html %}
+    
+    <main id="main-content">
+        {{ content }}
+    </main>
+    
+    {% include footer.html %}
+    
+    <!-- Smooth scrolling for anchor links -->
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            // Smooth scrolling for navigation links
+            const navLinks = document.querySelectorAll('a[href^="#"]');
+            
+            navLinks.forEach(link => {
+                link.addEventListener('click', function(e) {
+                    e.preventDefault();
+                    
+                    const targetId = this.getAttribute('href').substring(1);
+                    const targetElement = document.getElementById(targetId);
+                    
+                    if (targetElement) {
+                        const offsetTop = targetElement.offsetTop - 80; // Account for fixed header
+                        
+                        window.scrollTo({
+                            top: offsetTop,
+                            behavior: 'smooth'
+                        });
+                    }
+                });
+            });
+            
+            // Highlight current section in navigation
+            const sections = document.querySelectorAll('section[id]');
+            const navItems = document.querySelectorAll('.nav-link');
+            
+            function highlightNav() {
+                const scrollPosition = window.scrollY + 100;
+                
+                sections.forEach(section => {
+                    const sectionTop = section.offsetTop;
+                    const sectionHeight = section.offsetHeight;
+                    const sectionId = section.getAttribute('id');
+                    
+                    if (scrollPosition >= sectionTop && scrollPosition < sectionTop + sectionHeight) {
+                        navItems.forEach(item => item.classList.remove('active'));
+                        const activeNav = document.querySelector(`a[href="#${sectionId}"]`);
+                        if (activeNav) activeNav.classList.add('active');
+                    }
+                });
+            }
+            
+            window.addEventListener('scroll', highlightNav);
+        });
+    </script>
+</body>
+</html>
