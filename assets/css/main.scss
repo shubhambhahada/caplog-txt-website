@@ -1,3 +1,6 @@
+---
+---
+
 /* Caplog.txt Website Styles */
 
 /* Variables */
@@ -199,6 +202,14 @@ img {
 
 .text-center {
   text-align: center;
+}
+
+.text-accent {
+  color: var(--accent-color);
+}
+
+.text-lg {
+  font-size: 1.125rem;
 }
 
 .sr-only {

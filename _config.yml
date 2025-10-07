@@ -1,8 +1,8 @@
 # Site settings
 title: "Caplog.txt"
 description: "An open, plain-text format for structured personal logging"
-baseurl: ""
-url: "https://caplogtxt.github.io"
+baseurl: "/caplog-txt-website"
+url: "https://shubhambhahada.github.io"
 
 # Build settings
 markdown: kramdown
