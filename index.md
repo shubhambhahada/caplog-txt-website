@@ -32,27 +32,16 @@ description: "An open, plain-text format for structured personal logging. Future
   </div>
 </section>
 
-<section id="about" class="section">
-  <div class="container">
-    <div class="text-center" style="max-width: 800px; margin: 0 auto;">
-      <h2>Why Caplog.txt?</h2>
-      <p class="text-lg">
-        In a world of proprietary formats and vendor lock-in, Caplog.txt offers a refreshing approach to personal logging. 
-        Inspired by TODO.txt and named after Star Trek's Captain's Log, it's designed to last decades.
-      </p>
-    </div>
-  </div>
-</section>
 
 <section id="features" class="section section-features">
   <div class="container">
     <div class="features">
-      <div class="features-header">
+      <!-- <div class="features-header">
         <h2 class="features-title">Built for the Long Term</h2>
         <p class="features-subtitle">
           Every design decision prioritizes longevity, simplicity, and interoperability across tools and platforms.
         </p>
-      </div>
+      </div> -->
       
       <div class="grid grid-3">
         <div class="card">
@@ -228,30 +217,6 @@ Entry added successfully!</code></pre>
   </div>
 </section>
 
-<section id="get-started" class="section section-cta">
-  <div class="container">
-    <div class="text-center" style="max-width: 600px; margin: 0 auto;">
-      <h2>Start Your Digital Captain's Log</h2>
-      <p>
-        Join the growing community of people who believe in simple, durable, and open formats 
-        for personal data. Your future self will thank you.
-      </p>
-      
-      <div class="btn-group" style="margin-top: 2rem;">
-        <a href="{{ site.github.repository_url }}" class="btn btn-primary" target="_blank" rel="noopener noreferrer">
-          Read the Specification
-        </a>
-        <a href="{{ site.github.cli_repository_url }}" class="btn btn-outline" target="_blank" rel="noopener noreferrer">
-          Download CLI Tool
-        </a>
-      </div>
-      
-      <p style="margin-top: 2rem; font-size: 0.875rem; opacity: 0.8;">
-        MIT Licensed • Open Source • Community Driven
-      </p>
-    </div>
-  </div>
-</section>
 
 <script>
 function copyCode() {
