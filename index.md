@@ -15,8 +15,8 @@ description: "An open, plain-text format for structured personal logging. Future
         Future-proof, human-readable, and designed for longevity.
       </p>
       <div class="hero-actions">
-        <a href="#get-started" class="btn btn-primary">
-          Get Started
+        <a href="#syntax-example" class="btn btn-primary">
+          See it in Action
           <svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
             <path d="M7 17l9.2-9.2M17 17V7H7"/>
           </svg>
@@ -27,6 +27,33 @@ description: "An open, plain-text format for structured personal logging. Future
           </svg>
           View on GitHub
         </a>
+      </div>
+    </div>
+    
+    <!-- About Section Content -->
+    <div class="about-content" style="margin-top: 4rem; text-align: left;">
+      <div class="grid grid-2" style="gap: 3rem; align-items: center;">
+        <div>
+          <h2>About Caplog.txt</h2>
+          <p>
+            Caplog.txt was born from the frustration of proprietary journaling formats and the fear of losing decades of personal history to obsolete software. It's a specification for a plain-text format that prioritizes longevity, simplicity, and interoperability.
+          </p>
+          <p>
+            Every design decision in Caplog.txt is made with one question in mind: "Will this still be readable and useful in 50 years?" The answer is always yes.
+          </p>
+        </div>
+        <div>
+          <div class="highlight-box">
+            <h3>Why Plain Text?</h3>
+            <ul>
+              <li>No proprietary software required</li>
+              <li>Readable by humans and machines</li>
+              <li>Works with any text editor</li>
+              <li>Perfect for version control</li>
+              <li>Future-proof format</li>
+            </ul>
+          </div>
+        </div>
       </div>
     </div>
   </div>
@@ -249,13 +276,11 @@ Weather was perfect, cool and crisp.</code></pre>
             <h4 class="code-title">Terminal</h4>
           </div>
           <pre><code>$ python3 caplog.py ~/my-journal.txt
-
-Enter the entry date (Press enter to accept the default 2023-10-07):
-Enter the entry message (empty line to exit):
-Had a productive day working on the website.
-The new design is coming together nicely.
-
-Entry added successfully!</code></pre>
+            Enter the entry date (Press enter to accept the default 2023-10-07):
+            Enter the entry message (empty line to exit):
+            Had a productive day working on the website.
+            The new design is coming together nicely.
+              Entry added successfully!</code></pre>
         </div>
       </div>
     </div>

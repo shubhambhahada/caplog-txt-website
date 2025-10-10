@@ -34,13 +34,13 @@ exclude:
 # Site navigation
 navigation:
   - title: "About"
-    anchor: "about"
+    anchor: "hero"
   - title: "Features"
     anchor: "features"
-  - title: "CLI Tool"
-    anchor: "cli-tool"
-  - title: "Get Started"
-    anchor: "get-started"
+  - title: "Example"
+    anchor: "syntax-example"
+  - title: "Apps"
+    anchor: "apps"
 
 # GitHub repository information
 github:
