@@ -221,6 +221,27 @@ Weather was perfect, cool and crisp.</code></pre>
       </div>
     </div>
   </div>
+</section>
+
+<section id="terminal-example" class="section">
+  <div class="container">
+    <div class="grid grid-2" style="align-items: center;">
+      <div>
+        <h2>Command Line Tool</h2>
+        <p>
+          Get started immediately with our Python CLI tool. It handles the format details 
+          so you can focus on capturing your thoughts and experiences.
+        </p>
+        
+        <div class="btn-group">
+          <a href="{{ site.github.cli_repository_url }}" class="btn btn-primary" target="_blank" rel="noopener noreferrer">
+            Download CLI Tool
+          </a>
+          <a href="{{ site.github.cli_repository_url }}#usage" class="btn btn-outline" target="_blank" rel="noopener noreferrer">
+            View Documentation
+          </a>
+        </div>
+      </div>
       
       <div>
         <div class="code-example">
@@ -240,7 +261,6 @@ Entry added successfully!</code></pre>
     </div>
   </div>
 </section>
-
 
 <script>
 function copyCode() {
