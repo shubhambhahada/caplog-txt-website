@@ -171,32 +171,56 @@ Weather was perfect, cool and crisp.</code></pre>
   </div>
 </section>
 
-<section id="cli-tool" class="section section-cli">
+<section id="apps" class="section section-apps">
   <div class="container">
-    <div class="grid grid-2" style="align-items: center;">
-      <div>
-        <h2>Command Line Tool</h2>
-        <p>
-          Get started immediately with our Python CLI tool. It handles the format details 
-          so you can focus on capturing your thoughts and experiences.
-        </p>
-        
-        <ul>
-          <li><strong>Interactive entry creation</strong> - Just run the command and start typing</li>
-          <li><strong>Automatic timestamps</strong> - Handles both event and entry timestamps</li>
-          <li><strong>File validation</strong> - Ensures your logs stay properly formatted</li>
-          <li><strong>Configurable formats</strong> - Customize date and time formats to your preference</li>
-        </ul>
-        
-        <div class="btn-group">
-          <a href="{{ site.github.cli_repository_url }}" class="btn btn-primary" target="_blank" rel="noopener noreferrer">
-            Download CLI Tool
-          </a>
-          <a href="{{ site.github.cli_repository_url }}#usage" class="btn btn-outline" target="_blank" rel="noopener noreferrer">
-            View Documentation
+    <div class="apps-header">
+      <h2>Apps</h2>
+      <p class="apps-subtitle">
+        Tools and applications that work with the Caplog.txt format
+      </p>
+    </div>
+    
+    <div class="apps-grid">
+      <div class="app-card">
+        <div class="app-icon">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+            <polyline points="4 17 10 11 4 5"/>
+            <line x1="12" y1="19" x2="20" y2="19"/>
+          </svg>
+        </div>
+        <div class="app-content">
+          <h3 class="app-title">CLI Tool</h3>
+          <p class="app-description">
+            Python command-line interface for creating and managing caplog.txt files. 
+            Interactive entry creation with automatic timestamps and validation.
+          </p>
+          <a href="{{ site.github.cli_repository_url }}" class="app-link" target="_blank" rel="noopener noreferrer">
+            View on GitHub
+            <svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+              <path d="M7 17l9.2-9.2M17 17V7H7"/>
+            </svg>
           </a>
         </div>
       </div>
+      
+      <!-- Placeholder for future apps -->
+      <div class="app-card coming-soon">
+        <div class="app-icon">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+            <circle cx="12" cy="12" r="10"/>
+            <path d="M12 6v6l4 2"/>
+          </svg>
+        </div>
+        <div class="app-content">
+          <h3 class="app-title">More Apps Coming Soon</h3>
+          <p class="app-description">
+            Additional tools and integrations are in development. 
+            Stay tuned for web interfaces, mobile apps, and editor plugins.
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
       
       <div>
         <div class="code-example">
